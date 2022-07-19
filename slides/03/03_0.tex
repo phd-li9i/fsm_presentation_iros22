@@ -1,5 +1,8 @@
 \begin{frame}[noframenumbering]{Why dispense with correspondences?}
 
+\definecolor{r}{RGB}{255 69 0}
+\definecolor{b}{RGB}{51 102 153}
+
   \begin{figure}\vspace{1cm}
     \animategraphics[height=135pt,width=240pt,autoplay,loop]{5}{./figures/03/pic}{0}{50}
     \caption{Matching with correspondences in real conditions. Sensor noise:
@@ -7,8 +10,8 @@
              $0.035$ m, $0.011$ rad. Adapted from
              \url{https://nbviewer.org/github/niosus/notebooks/blob/master/icp.ipynb},
               courtesy of Igor Bogoslavskyi}
-    \begin{textblock}{3}(4.4,3.2)
-      \scriptsize Euclidean Space
+    \begin{textblock}{5}(3.4,3.2)
+      \scriptsize Euclidean Space $|$ \textcolor{r}{$\mathcal{S}_{\text{ref}}$},\textcolor{b}{$\mathcal{S}_{\text{sens}}$}
     \end{textblock}
     \begin{textblock}{4}(8.4,3.2)
       \scriptsize Correspondences' space

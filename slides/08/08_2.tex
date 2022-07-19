@@ -1,0 +1,18 @@
+\begin{frame}[noframenumbering]
+
+  \frametitle{Correspondenceless solution to orientation estimation}
+
+  Final orientation estimate $\Leftarrow$ Rehearse translation estimation for $2^\nu$ pose estimates $\hat{\bm{p}}_i$, $i = 0,1,\dots,2^\nu-1$, and rank
+  \vspace{-0.5cm}
+
+  % https://tex.stackexchange.com/questions/240243/getting-gif-and-or-moving-images-into-a-latex-presentation
+  \begin{align}
+    \text{CAER}(\mathcal{S}_{sens}(\bm{p}), \mathcal{S}^{\bm{M}}(\hat{\bm{p}}_i)) = \dfrac{1}{N_s} \sum\limits_{n=0}^{N_s-1}\Bigg|\mathcal{S}_{sens}(n)|_{\bm{p}}-\mathcal{S}^{\bm{M}}(n)|_{\hat{\bm{p}}_i} \Bigg| \nonumber
+  \end{align}
+  \vspace{-0.5cm}
+
+  \begin{figure}
+    \input{./figures/08/caer.tex}
+  \end{figure}
+
+\end{frame}
