@@ -1,21 +1,12 @@
 \begin{frame}[noframenumbering]{Why dispense with correspondences?}
 
-\definecolor{r}{RGB}{255 69 0}
-\definecolor{b}{RGB}{51 102 153}
+\begin{overlayarea}{\textwidth}{3cm}
+\leavevmode
+  \begin{itemize}
+    \item Sensor noise
+    \item Void correspondences (outliers)
+  \end{itemize}
 
-  \begin{figure}\vspace{1cm}
-    \animategraphics[height=135pt,width=240pt,autoplay]{5}{./figures/04/pic}{0}{50}
-    \caption{Matching with correspondences in real conditions, with
-             outliers/void correspondences. Sensor noise:
-             $\mathcal{N}(0, 0.10^2)$ [m,m$^2$]. Adapted from
-             \url{https://nbviewer.org/github/niosus/notebooks/blob/master/icp.ipynb},
-              courtesy of Igor Bogoslavskyi}
-    \begin{textblock}{5}(3.4,3.2)
-      \scriptsize Euclidean Space $|$ \textcolor{r}{$\mathcal{S}_{\text{ref}}$},\textcolor{b}{$\mathcal{S}_{\text{sens}}$}
-    \end{textblock}
-    \begin{textblock}{4}(8.4,3.2)
-      \scriptsize Correspondences' space
-    \end{textblock}
-  \end{figure}
+\end{overlayarea}
 
 \end{frame}
